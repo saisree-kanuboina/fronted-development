@@ -1,0 +1,116 @@
+<!--this is my first form i practiced mutliple elements-->
+
+<!doctype html>
+<html>
+  <head>
+    <title>form example</title>
+  </head>
+  <body>
+    <h1>SS REGISTER FORM</h1>
+
+    <form
+      action="getdata.py"
+      method="post"
+      autocomplete="on"
+      novalidate
+      enctype="multipart/form-data"
+      autocomplete="on"
+    >
+      <label for="sn">username:</label><sup>*</sup>
+      <input
+        type="text"
+        id="sn"
+        name="sname"
+        required
+        placeholder="give name as per ssc"
+        autofocus
+      /><br /><br />
+
+      <label for="mn">Full name:</label>
+      <input type="text" id="mn" name="namne" /><br /><br />
+
+      <label for="pwd">password:</label>
+      <input
+        type="password"
+        id="pwd"
+        name="password"
+        value="saisree"
+        disabled
+      /><br /><br />
+
+      Gender:
+      <label for="f">female</label>
+      <input type="radio" id="f" name="Gender" />
+
+      <label for="m">male</label>
+      <input type="radio" id="m" name="Gender" /><br /><br />
+
+      Languages:
+      <input type="checkbox" id="E" name="english" />
+      <label for="E">english</label>
+
+      <input type="checkbox" id="T" name="Telugu" />
+      <label for="T">Telugu</label>
+
+      <input type="checkbox" id="H" name="hindi" />
+      <label for="H">hindi</label><br /><br />
+
+      <label for="em"> email ID:</label>
+      <input type="email" id="em" name="email" /><br /><br />
+
+      <label for="mob">mobile:</label>
+      <input type="tel" id="mob" name="mobile" placeholder="+91-" /><br /><br />
+
+      <fieldset>
+        <legend>DOB</legend>
+        <label>Date of birth:</label>
+        <input type="date" id="dob" name="birthdate" /><br /><br />
+
+        <label>Time of birth:</label>
+        <input type="time" id="tob" name="timebirth" /><br /><br />
+      </fieldset>
+
+      <input type="datetime-local" /><br /><br />
+
+      <label for="bottles">How many bottles are required:</label>
+      <input type="range" id="bottles" name="bottles" /><br /><br />
+
+      <label for="resume">Upload your resume:</label>
+      <input type="file" id="cv" name="resume" multiple /><br /><br />
+
+      <label for="profile">linkedin link:</label>
+      <input type="url" id="profile" name="profilelink" /><br /><br />
+
+      <label for="c">select your favorite colour</label>
+      <input type="color" id="c" name="color" /><br /><br />
+
+      <input
+        type="image"
+        src="../andhara.png"
+        height="100"
+        width="100"
+      /><br /><br />
+
+      <label for="cntry">country</label>
+      <select id="cntry" name="country">
+        <option>IND</option>
+        <option>US</option>
+        <option>US</option></select
+      ><br /><br />
+
+      <label for="addr">address:</label>
+      <textarea rows="5" cols="50"> </textarea><br /><br />
+
+      <label for="fc"> select your fav color:</label>
+      <input list="clrs" id="fc" name="fc" />
+      <datalist id="clrs">
+        <option>Red</option>
+        <option>Green</option>
+        <option>Yellow</option></datalist
+      ><br /><br />
+
+      <input type="reset" /><br /><br />
+      <input type="submit" value="register" /><br /><br />
+    </form>
+  </body>
+</html>
